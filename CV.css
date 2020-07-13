@@ -1,0 +1,623 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+html {
+    height: 100%;
+}
+
+body {
+    height: 94%;
+    margin-top: 2.8%;
+}
+
+/********************Nav-Barre**********************/
+#navigation {
+    overflow: hidden;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 6%;
+    background-color: rgb(41, 111, 240);
+    text-align: center;
+    z-index: 9999;
+}
+
+#nav {
+    margin-right: 3.5%;
+    position: relative;
+    top: 25%;
+}
+
+#nav li {
+    display: inline;
+}
+
+#nav a:link, #nav a:visited 
+{
+   color: white;
+   font-size: 18px;
+   text-decoration: none;
+   padding: 1%
+}
+
+#nav a:hover {
+    color: rgb(237, 188, 100);
+}
+
+/*****************************************************/
+/*********************Animation***********************/
+.container {
+    width: 100%;
+    height: 170px;
+    margin-bottom: 4%;
+    background-color: cornflowerblue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.text1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: black 1px 1px 2px;
+    letter-spacing: 7px;
+    margin-top: 2%;
+    margin-bottom: 0.5%;
+    background-color: cornflowerblue;
+    position: relative;
+    animation: text 2s 1;
+}
+
+.text2 {
+    color: rgb(237, 188, 100);
+    font-size: 20px;
+    text-shadow: black 1px 1px 2px;
+}
+
+@keyframes text {
+    0% {
+        color: cornflowerblue;
+        margin-bottom: -40px;
+    }
+
+    30% {
+        letter-spacing: 15px;
+        margin-bottom: -40px;
+    }
+
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+/****************************************************/
+
+.expResume {
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    color: cornflowerblue;
+    padding: 5%;
+}
+
+.expTitle {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: underline;
+    font-size: 25px;
+    color: cornflowerblue;
+    text-shadow: black 1px 1px 1px;
+    padding-top: 5%;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: cornflowerblue;
+    text-shadow: black 1px 1px 1px;
+}
+
+.resume {
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: rgb(149, 172, 214);
+    margin-bottom: 5%;
+}
+/********************À-propos******************************/
+#infosPerso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#infosPerso p {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: cornflowerblue;
+    background-color: rgba(209, 208, 208, 0.4);
+    border-radius: 10px;
+    box-shadow: black 1px 1px 2px;
+    padding: 3%;
+    margin-top: 5%;
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+#infosPerso p:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+#avatar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 4%;
+}
+
+#avatar img {
+    width: 80%;
+}
+
+.descrip {
+    width: 45%;
+    text-align: justify;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    color: cornflowerblue;
+}
+
+/*********************************************************/
+/**********************Compétence*************************/
+
+#skill {
+    margin-bottom: 4%;
+}
+
+#icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 4%;
+}
+
+#icons img {
+    width: 100%;
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+#icons img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+#html {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#progressBarHtml { 
+    width: 100%;
+    height: 24px;
+    padding: 4px;
+    background-color: cornflowerblue;
+    border-radius: 16px;
+    box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    margin-bottom: 3.5%;
+    margin-top: 25%;
+}
+
+#progressBarHtml:before { 
+    content: '50%';
+    text-align: center;
+    display: block;
+    position: absolute;
+    width: 5%;
+    height: 24px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}
+
+#css {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#progressBarCss { 
+    width: 100%;
+    height: 24px;
+    padding: 4px;
+    background-color: cornflowerblue;
+    border-radius: 16px;
+    box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    margin-bottom: 3.5%;
+    margin-top: 25%;
+}
+
+#progressBarCss:before { 
+    content: '60%';
+    text-align: center;
+    display: block;
+    position: absolute;
+    width: 6%;
+    height: 24px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}
+
+#node {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#progressBarNode { 
+    width: 100%;
+    height: 24px;
+    padding: 4px;
+    background-color: cornflowerblue;
+    border-radius: 16px;
+    box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    margin-bottom: 3.5%;
+    margin-top: 25%;
+}
+
+#progressBarNode:before { 
+    content: '50%';
+    text-align: center;
+    display: block;
+    position: absolute;
+    width: 5%;
+    height: 24px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}
+
+#ps {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#progressBarPs { 
+    width: 100%;
+    height: 24px;
+    padding: 4px;
+    background-color: cornflowerblue;
+    border-radius: 16px;
+    box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    margin-bottom: 3.5%;
+    margin-top: 25%;
+}
+
+#progressBarPs:before { 
+    content: '80%';
+    text-align: center;
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 24px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}
+
+/***************************************************************/
+/*************************Experience****************************/
+
+#exp {
+    margin-bottom: 4%;
+}
+
+.descriptif {
+    width: 35%;
+    background-color: rgba(209, 208, 208, 0.4);
+    border-radius: 10px;
+    box-shadow: black 1px 1px 2px;
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+.descriptif:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+#proservia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 13%;
+}
+
+#proservia img {
+    width: 5%;
+    height: 350px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.expTime {
+    width: 15%;
+    background-color: rgb(100, 149, 237);
+    border-radius: 10px;
+    box-shadow: black 1px 1px 2px;
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+.expTime:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.expTime p {
+    color: white;
+    padding: 5%;
+}
+
+#helpline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16.65%;
+}
+
+#helpline img {
+    width: 5%;
+    height: 350px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#duacom {
+    display: flex;
+    align-items: center;
+    margin-left: 13%;
+}
+
+#duacom img {
+    width: 5%;
+    height: 350px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#teleperformance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16.65%;
+}
+
+#teleperformance img {
+    width: 5%;
+    height: 350px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/*************************************************************/
+/************************Hobbies******************************/
+
+#iconsHobbies {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 4%;
+}
+
+#iconsHobbies img {
+    width: 10%;
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+#iconsHobbies img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+/***************************************************************/
+/*************************Contact*******************************/
+
+#iconsContact {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2.5%;
+}
+
+#infosContact p {
+    color: white;
+    font-size: 20px;
+}
+
+#infosContact a {
+    color: white;
+    font-size: 20px;
+}
+
+#infosContact a:hover {
+    color: rgb(237, 188, 100);
+}
+
+#infosContact {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#contact {
+    background-color: cornflowerblue;
+    padding-bottom: 3%;
+    padding-top: 1%;
+}
+
+#contact h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-shadow: black 1px 1px 1px;
+}
+
+#contact p {
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-bottom: 1%;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer a {
+    text-align: center;
+}
+
+.footer img {
+    width: 25%;
+    margin-bottom: 6%;
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+.footer img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.expTimeMobile {
+    display: none;
+    width: 70%;
+    background-color: rgb(100, 149, 237);
+    border-radius: 10px;
+    box-shadow: black 1px 1px 2px;
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+.expTimeMobile p {
+    color: white;
+    padding: 5%;
+}
+
+
+@media screen and (max-width: 950px){
+    .expResume, .descrip {
+        text-align: center;
+    }
+    .descrip {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    #navigation{
+        display: none;
+    }
+
+    body {
+        margin-top: 0%;
+    }
+
+    #avatar {
+        flex-direction: column;
+    }
+
+    #infosPerso {
+        margin-bottom: 50px;
+    }
+
+    .descrip {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    #progressBarHtml, #progressBarCss, #progressBarNode, #progressBarPs {
+        display: none;
+    }
+
+    #html, #css, #node, #ps {
+        width: 20%;
+    }
+
+    #skill {
+        margin-bottom: 50px;
+    }
+
+    #proservia, #helpline, #duacom, #teleperformance {
+        flex-direction: column;
+        margin-left: 0%;
+        margin-bottom: 50px;
+    }
+
+    .descriptif {
+        width: 70%;
+    }
+
+    #exp img {
+        display: none;
+    }
+
+    .expTime {
+        display: none;
+    }
+
+    .expTimeMobile {
+        display: block;
+    }
+
+    #iconsHobbies img {
+        width: 20%;
+    }
+
+    #iconsHobbies {
+        margin-bottom: 50px;
+    }
+
+    #infosContact {
+        flex-direction: column;
+        padding: 10%;
+    }
+
+    .footer {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .descriptif, .expTimeMobile {
+        width: 90%;
+    }
+
+    .container {
+        height: 250px;
+    }
+}
