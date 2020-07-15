@@ -217,11 +217,11 @@ body {
 }
 
 #progressBarHtml:before { 
-    content: '50%';
+    content: '90%';
     text-align: center;
     display: block;
     position: absolute;
-    width: 5%;
+    width: 9%;
     height: 24px;
     background: white;
     border-radius: 12px;
@@ -249,11 +249,11 @@ body {
 }
 
 #progressBarCss:before { 
-    content: '60%';
+    content: '90%';
     text-align: center;
     display: block;
     position: absolute;
-    width: 6%;
+    width: 9%;
     height: 24px;
     background: white;
     border-radius: 12px;
@@ -281,11 +281,11 @@ body {
 }
 
 #progressBarNode:before { 
-    content: '50%';
+    content: '75%';
     text-align: center;
     display: block;
     position: absolute;
-    width: 5%;
+    width: 7.5%;
     height: 24px;
     background: white;
     border-radius: 12px;
