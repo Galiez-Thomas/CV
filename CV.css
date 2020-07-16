@@ -188,6 +188,8 @@ body {
 
 #icons img {
     width: 13%;
+    margin-right: 15%;
+    margin-bottom: 4%;
     transform: scale(1);
     transition-duration: 1s;
 }
